@@ -1,0 +1,97 @@
+CODE:
+
+package employee;
+import java.util.Scanner;                                     //Importing java library 
+
+public class Employee {                                       // initialization of allm the datatypes
+    String name;
+        float salary;
+        String address;
+        float doj;
+public void getInput(){                                       // inputing of data
+    Scanner in = new Scanner(System.in);
+    System.out.print("Enter the name :: ");
+     name = in.next();
+     System.out.print("Enter the salary :: ");
+  salary = in.nextFloat();
+  System.out.print("Enter the address:: ");
+  address = in.next();
+  System.out.print("Enter the doj :: ");
+  doj = in.nextFloat();
+}
+public void display() {                                           // displaying the given input
+    System.out.println("Employee name = " + name);
+  System.out.println("Employee salary = " + salary);
+  System.out.println("Employee address = " + address);
+  System.out.println("Employee doj = "+ doj);
+}
+ 
+    public static void main(String[] args) {
+        Class e[] = new Class[5];                                 
+  
+  for(int i=0; i<5; i++) {                                       // initialization of FOR loop
+   
+   e[i] = new Class();
+   e[i].getInput();
+  }
+  
+  System.out.println(" Data Entered as below:");                // Printing the given output
+  
+  for(int i=0; i<5; i++) {
+   
+   e[i].display();
+        
+    }
+  }
+  
+  
+  
+  OUTPUT:
+  
+  Employee name::Ramesh
+  Employee salary::40000
+  Employee address:: 64C-WallsStreet
+  Employee doj:: 1999
+   Employee name::Robert
+  Employee salary::45000
+  Employee address:: 68D-WallsStreet
+  Employee doj:: 1994
+   Employee name::Sam
+  Employee salary::50000
+  Employee address:: 26B-WallsStreet
+  Employee doj:: 2000
+   Employee name::John
+  Employee salary::30000
+  Employee address:: 69D-WallsStreet
+  Employee doj:: 2006
+   Employee name::Ted
+  Employee salary::50000
+  Employee address:: 12A-WallsStreet
+  Employee doj:: 2002
+  
+  Data Entered as below:
+  
+  Employee name::Ramesh
+  Employee salary::40000
+  Employee address:: 64C-WallsStreet
+  Employee doj:: 1999
+   Employee name::Robert
+  Employee salary::45000
+  Employee address:: 68D-WallsStreet
+  Employee doj:: 1994
+   Employee name::Sam
+  Employee salary::50000
+  Employee address:: 26B-WallsStreet
+  Employee doj:: 2000
+   Employee name::John
+  Employee salary::30000
+  Employee address:: 69D-WallsStreet
+  Employee doj:: 2006
+   Employee name::Ted
+  Employee salary::50000
+  Employee address:: 12A-WallsStreet
+  Employee doj:: 2002
+  
+  
+  
+    
